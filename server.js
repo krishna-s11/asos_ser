@@ -132,12 +132,12 @@ const formData = [
         <p>Please review and approve the above details.</p>
         <a href="https://amber-asos.vercel.app/final/53345/${req.body.typeOfSupplier}">Approve</a>
         `,
-        attachments: [
-            {
-                filename: 'pancard.pdf',
-                path: './uploads/Pancard.pdf',
-            }
-        ]
+        // attachments: [
+        //     {
+        //         filename: 'pancard.pdf',
+        //         path: './uploads/Pancard.pdf',
+        //     }
+        // ]
     }
 
     transporter.sendMail(mailOptions, (error, info) => {
