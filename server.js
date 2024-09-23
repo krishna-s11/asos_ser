@@ -92,7 +92,7 @@ const formData = [
 
     let mailOptions = {
         from : "krishnasaxena7142@gmail.com",
-        to: "krishnasaxena69@gmail.com",
+        to: ["sharma.abhishek@ambergroupindia.com", "bhanu.prakash@ambergroupindia.com","sagar.chauhan@ambergroupindia.com", "Pallavroy@ambergroupindia.com", "Seema.rani@ambergroupindia.com","Raghvendra.yadav@ambergroupindia.com", "Anshu.gulia@ambergroupindia.com"],
         subject: "New Supplier onboarding request",
         html: `
         <p> A new submission has been made on ASOS.</p>
@@ -225,7 +225,7 @@ app.post('/api/final_form/:vendor_id', (req, res) => {
             "TIN": "",
             "TRC": "",
             "VENDOR SPECIFICATION": "",
-            "Responsible Person": results[0].owner_name
+            "Responsible Person": "Rajat"
         };
 
         // Convert JSON to XLSX format
@@ -241,7 +241,7 @@ app.post('/api/final_form/:vendor_id', (req, res) => {
             // Send email after the file has been saved
             let mailOptions = {
                 from: "krishnasaxena7142@gmail.com",
-                to: "krishnasaxena69@gmail.com",
+                to: ["girishsaluja@ambergroupindia.com", "sandeepagarwal@ambergroupindia.com", "ashutosh@ambergroupindia.com"],
                 subject: "New Supplier onboarding request",
                 text: `A new supplier onboarding request has been submitted. Please find the attached excel.`,
                 attachments: [
