@@ -130,6 +130,7 @@ const formData = [
         ${req.body.nameOfAssessee? `<p><b>Nature Of Assessee:</b> ${req.body.nameOfAssessee}</p>`:null}
         <br>
         <p>Please review and approve the above details.</p>
+        <a href="https://amber-asos.vercel.app/final/53345/${req.body.typeOfSupplier}">Approve</a>
         `,
         attachments: [
             {
