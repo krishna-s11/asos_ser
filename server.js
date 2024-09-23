@@ -36,8 +36,8 @@ let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     auth: {
-      user: 'krishnasaxena7142@gmail.com',
-      pass: 'lkigwwltdnklsyxy'
+      user: 'amberonboarding@gmail.com',
+      pass: 'yvxuainfgzidwdhc'
     }
 });
 
@@ -91,7 +91,7 @@ const formData = [
 ];
 
     let mailOptions = {
-        from : "krishnasaxena7142@gmail.com",
+        from : "amberonboarding@gmail.com",
         to: ["sharma.abhishek@ambergroupindia.com", "bhanu.prakash@ambergroupindia.com","sagar.chauhan@ambergroupindia.com", "Pallavroy@ambergroupindia.com", "Seema.rani@ambergroupindia.com","Raghvendra.yadav@ambergroupindia.com", "Anshu.gulia@ambergroupindia.com"],
         subject: "New Supplier onboarding request",
         html: `
@@ -240,7 +240,7 @@ app.post('/api/final_form/:vendor_id', (req, res) => {
 
             // Send email after the file has been saved
             let mailOptions = {
-                from: "krishnasaxena7142@gmail.com",
+                from: "amberonboarding@gmail.com",
                 to: ["girishsaluja@ambergroupindia.com", "sandeepagarwal@ambergroupindia.com", "ashutosh@ambergroupindia.com"],
                 subject: "New Supplier onboarding request",
                 text: `A new supplier onboarding request has been submitted. Please find the attached excel.`,
